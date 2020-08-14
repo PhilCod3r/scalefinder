@@ -1,0 +1,56 @@
+body{
+    text-align: center;
+    background-color: rgb(10, 11, 12);
+    color: white;
+}
+#display{
+    display: inline-block;
+    width: 100%;
+}
+.scale{
+    height: 5vh;
+    width: 5vw;
+    padding: 2%;
+    font-size: 200%;
+    border: 0px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-weight: bolder;
+    margin-top: 35vh;
+
+}
+.scale:hover{
+    color: white;
+}
+#intro h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 250%;
+    background: -webkit-linear-gradient(red, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#clear{
+    background-color: tomato;
+    margin: 0px;
+    border: 0px;
+    height: 30px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bolder;
+}
+#clear:hover{
+    background-color: yellowgreen;
+    color: white;
+
+}
+@media only screen and (max-width:600px){
+    .scale{
+        font-size: 100%;
+        width: 6vw;
+        height: 7vh;
+        max-width: 100%;
+    }
+}
