@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title>Scale Finder</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <script>
+            function cscale(){
+                let cscale = ['c','d','e','f','g','a','b'];
+                let i;
+                for (i=0 ; i<7; i++){
+                    let keys = document.getElementById(cscale[i]);
+                    keys.style.backgroundColor = 'yellow';
+                }  }  
+            function csscale(){
+                let scale = ['c#','eb','f','f#','ab','bb','c'];
+                let i;
+                for(i=0;i<7;i++){
+                    let keys = document.getElementById(scale[i]);
+                    keys.style.backgroundColor = 'yellow';
+                }}
+            function dscale(){
+                let scale = ['d','e','f#','g','a','b','c#'];
+                let i;
+                for(i=0;i<7;i++){
+                    let keys = document.getElementById(scale[i]);
+                    keys.style.backgroundColor = 'yellow';
+                }}
+                function ebscale(){
+                let scale = ['eb','f','g','ab','bb','c','d'];
+                let i;
+                for(i=0;i<7;i++){
+                    let keys = document.getElementById(scale[i]);
+                    keys.style.backgroundColor = 'yellow';
+                }}
+                function escale(){
+                let scale = ['e','f#','ab','a','b','c#','eb'];
+                let i;
+                for(i=0;i<7;i++){
+                    let keys = document.getElementById(scale[i]);
+                    keys.style.backgroundColor = 'yellow';
+                }}
+                function fscale(){
+                let scale = ['f','bb','c','g','a','e','d'];
+                let i;
+                for(i=0;i<7;i++){
+                    let keys = document.getElementById(scale[i]);
+                    keys.style.backgroundColor = 'yellow';
+                }}
+                function fsscale(){
+                let scale = ['eb','f','f#','ab','bb','b','c#'];
+                let i;
+                for(i=0;i<7;i++){
+                    let keys = document.getElementById(scale[i]);
+                    keys.style.backgroundColor = 'yellow';
+                }}
+                function gscale(){
+                let scale = ['d','e','f#','g','a','b','c'];
+                let i;
+                for(i=0;i<7;i++){
+                    let keys = document.getElementById(scale[i]);
+                    keys.style.backgroundColor = 'yellow';
+                }}
+                function abscale(){
+                let scale = ['c#','eb','f','g','ab','bb','c'];
+                let i;
+                for(i=0;i<7;i++){
+                    let keys = document.getElementById(scale[i]);
+                    keys.style.backgroundColor = 'yellow';
+                }}
+                function ascale(){
+                let scale = ['d','e','f#','ab','a','b','c#'];
+                let i;
+                for(i=0;i<7;i++){
+                    let keys = document.getElementById(scale[i]);
+                    keys.style.backgroundColor = 'yellow';
+                }}
+                function bbscale(){
+                let scale = ['d','eb','f','g','a','bb','c'];
+                let i;
+                for(i=0;i<7;i++){
+                    let keys = document.getElementById(scale[i]);
+                    keys.style.backgroundColor = 'yellow';
+                }}
+                function bscale(){
+                let scale = ['eb','e','f#','ab','bb','b','c#'];
+                let i;
+                for(i=0;i<7;i++){
+                    let keys = document.getElementById(scale[i]);
+                    keys.style.backgroundColor = 'yellow';
+                    
+                }}
+        </script>
+    </head>
+    <body>
+        <header id="intro"> 
+        <h2>Music Scale Finder</h2>
+        <p>Select Which Scale you want. Click the button.</p>
+        <br><br><br>
+        </header>
+        <main>
+            <div id="display">
+            <button class="scale" id="c" onclick="cscale()">C</button>
+            <button class="scale" id="c#" onclick="csscale()">C#</button>
+            <button class="scale" id="d" onclick="dscale()">D</button>
+            <button class="scale" id="eb" onclick="ebscale()">Eb</button>
+            <button class="scale" id="e" onclick="escale()">E</button>
+            <button class="scale" id="f" onclick="fscale()">F</button>
+            <button class="scale" id="f#" onclick="fsscale()">F#</button>
+            <button class="scale" id="g" onclick="gscale()">G</button>
+            <button class="scale" id="ab" onclick="abscale()">Ab</button>
+            <button class="scale" id="a" onclick="ascale()">A</button>
+            <button class="scale" id="bb" onclick="bbscale()">Bb</button>
+            <button class="scale" id="b" onclick="bscale()">B</button>
+            </div>
+        </main>
+        <button id="clear" onclick="window.location.reload();">Next One</button>
+    </body>
+</html>
